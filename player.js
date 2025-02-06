@@ -160,7 +160,7 @@ function initializePlayer(client) {
                 }
             } else {
                 console.log(`Autoplay is disabled for guild: ${guildId}`);
-                player.destroy();
+                //player.destroy(); //Para o bot sair após terminar de tocar
                 await channel.send("🎶 **Queue has ended. Autoplay is disabled.**");
             }
         } catch (error) {
